@@ -52,7 +52,7 @@ public class Contacto implements Serializable{
     /**
      * correo del contacto
      */
-    @Column(name = "email", nullable = false, length = 50)
+    @Column(name = "email", nullable = false, length = 30)
     private String email;
 
     /**

@@ -69,8 +69,8 @@ public class ContatsRutes {
 
     @CrossOrigin(origins = "http://localhost:3000")
     @PutMapping(path = "/contact/{id}")
-    public ResponseEntity<Contacto> update(
-            @RequestBody Contacto contact, @PathVariable("id") Integer id) {
+    public ResponseEntity<Contacto> update(@PathVariable("id") Integer id,
+                                           @RequestBody Contacto contact) {
 
         libretaService.updateContact(id, contact);
 
